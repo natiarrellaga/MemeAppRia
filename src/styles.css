@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-spring {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(192,57,43,1) 0%, rgba(142,68,173,1) 100%);
+}
+.ngx-pagination{
+    text-align: center;
+}
+.ngx-pagination .current,
+.ngx-pagination a:hover,
+.ngx-pagination button:hover {
+    background: #ff9100 !important;
+}
+.ngx-pagination a span,
+.pagination-next a,
+.pagination-previous a{
+    color: #fff !important;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}

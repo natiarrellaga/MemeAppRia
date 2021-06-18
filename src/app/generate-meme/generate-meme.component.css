@@ -1,0 +1,37 @@
+.card.horizontal .card-image{
+    min-width: 40%;
+    height: auto;
+}
+.share-link{
+    display: flex;
+    align-items: center;
+}
+.w-100{
+    width: 100%;
+}
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+    color: #ff9100;
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #ff9100;
+    box-shadow: 0 1px 0 0 #ff9100;
+}
+.card{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    border-bottom: 1px solid #fff;
+}
+.input-field [type=text] {
+    color: white;
+}
+.input-field label {
+    color: #fff;
+}

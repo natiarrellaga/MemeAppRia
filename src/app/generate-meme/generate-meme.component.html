@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img *ngIf="!memeResponse" src="{{ memeUrl }}">
+            <img *ngIf="memeResponse" src="{{ memeResponse.data.url }}">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p></p>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input #text0 id="text0" type="text" class="validate">
+                  <label class="range-text text-accent-3" for="text0">Texto</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input #text1 id="text1" type="text" class="validate">
+                  <label class="range-text text-accent-3" for="text1">Otro texto</label>
+                </div>
+              </div>
+            </div>
+            <div class="card-action">
+                <button class="btn waves-effect waves-light orange accent-3 w-100" (click)="generateMeme(text0.value, text1.value)">Crear meme</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="memeResponse">
+        <a class="share-link orange-text text-accent-3" href="{{ memeResponse.data.url }}"><i class="material-icons">share</i>Compartir</a>
+      </div>
+      
+</div>

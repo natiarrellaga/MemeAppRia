@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+      <div class="col s12 m6 l3" *ngFor="let meme of memes | paginate: { itemsPerPage: 12, currentPage: p }">
+        <div class="card">
+          <div class="card-image center">
+            <img height="300px" width="300px" src="{{meme.url}}">
+          </div>
+          <div class="center">
+            <p class="white-text">{{meme.name}}</p>
+          </div>
+          <div class="center p-1">
+            <a routerLink="/generate-meme/{{ meme.id }}" class="orange-text text-accent-3">¡Crear meme!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls> 
+  </div>
